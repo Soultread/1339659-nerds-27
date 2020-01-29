@@ -7,7 +7,7 @@
   <body>
       <header>
           <nav>
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+              <a href="/index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds"></a>
               <ul>
                   <li><a href="">Студия</a></li>
                   <li><a href="">Клиенты</a></li>
@@ -22,7 +22,7 @@
       </header>
       <main>
         <h1>Магазин готовых шаблонов</h1>
-        <!-- В этой секции все фильтры -->
+        <div><!-- Это контейнер для тела страницы -->
           <section>
             <h2>Фильтрация результатов</h2>
             <!-- Место для блока Стоимость -->
@@ -40,96 +40,73 @@
                 <li><input type="checkbox">Галерея</li>
                 <li><input type="checkbox">Корзина</li>
             </ul>
-            <button>Показать</button>
+            <button type="submit">Показать</button>
           </section>
-
-          <!-- Место для блока Сортировка -->
-
           <section>
             <h2>Подобранные готовые решения</h2>
+            <!-- Место для блока Сортировка -->
             <ul>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Превью макета главной сайта Sedona">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>Sedona</p>
+                        <a href="">Sedona</a>
                         <p>Информационный сайт для туристов</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-pink-jpg.png" width="360" height="576" alt="Превью макета главной сайта Pink app">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>Pink app</p>
+                        <a href="">Pink app</a>
                         <p>Продуктовый лендинг приложения для iOS и Android</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Превью макета главной сайта Barbershop">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>Barbershop</p>
+                        <a href="">Barbershop</a>
                         <p>Сайт салона красоты. <br> Для мужчин, да.</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-mishka-jpg.png" width="360" height="576" alt="Превью макета главной сайта Mishka">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>Mishka</p>
+                        <a href="">Mishka</a>
                         <p>Интернет-магазин вязаных игрушек</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-aplus-jpg.png" width="360" height="576" alt="Превью макета главной сайта A Plus">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>A Plus</p>
+                        <a href="">A Plus</a>
                         <p>Лендинг курсов повышения квалификации</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
                 <li>
-                    <div>
-                       <!-- Картинка шапки окна браузера — фоном --> 
-                    </div>
                     <img src="img/img-kvast-jpg.png" width="360" height="576" alt="Превью макета главной сайта Кваст">
                     <div>
                         <!-- Это блок, вылезающий по ховеру(?) -->
-                        <p>Кваст</p>
+                        <a href="">Кваст</a>
                         <p>Промо-сайт производителя крафтового кваса</p>
-                        <a href="">9 900 руб.</a>
+                        <button type="button">9 900 руб.</button>
                     </div>                    
                 </li>
             </ul>
             <!-- Место для навигации по выдаче -->
           </section>
+        </div>
       </main>
       <footer>
         <!-- Блок с картой -->
-        <div>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
         <ul>
           <li>
             <a href=""><img src="img/vk-icon.png" alt="Вконтакте"></a>
@@ -141,6 +118,10 @@
             <a href=""><img src="img/insta-icon.png" alt="Instagram"></a>
           </li>
         </ul>
+        <div>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </footer>
   </body>
 </html>
