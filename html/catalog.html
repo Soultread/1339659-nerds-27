@@ -25,7 +25,10 @@
         <div><!-- Это контейнер для тела страницы -->
           <section>
             <h2>Фильтрация результатов</h2>
-            <!-- Место для блока Стоимость -->
+            <p>Стоимость:</p>
+            <p><input type="range" min="0" max="15000"></p>
+            <p>От <input type="number"></p>
+            <p>До <input type="number"></p>
             <p>Сетка:</p>
             <ul>
                 <li><input type="radio">Адаптивная</li>
@@ -44,7 +47,14 @@
           </section>
           <section>
             <h2>Подобранные готовые решения</h2>
-            <!-- Место для блока Сортировка -->
+            <p>Сортировать:</p>
+            <div>
+              <button type="button">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По названию</button>
+              <button type="button"><!-- От большего к меньшему/от А до Я... --></button>
+              <button type="button"><!-- От меньшего к большему/от Я до А... --></button>
+            </div>
             <ul>
                 <li>
                     <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Превью макета главной сайта Sedona">
@@ -101,7 +111,12 @@
                     </div>                    
                 </li>
             </ul>
-            <!-- Место для навигации по выдаче -->
+            <div>
+              <a>1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">Следующая</a>
+            </div>
           </section>
         </div>
       </main>
