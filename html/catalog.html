@@ -22,24 +22,58 @@
         <div><!-- Это контейнер для тела страницы -->
           <section>
             <h2>Фильтрация результатов</h2>
-            <p>Стоимость:</p>
+            <h3>Стоимость:</h3>
             <p><input type="range" min="0" max="15000"></p>
-            <p>От <input type="number"></p>
-            <p>До <input type="number"></p>
-            <p>Сетка:</p>
-            <ul>
-                <li><input type="radio">Адаптивная</li>
-                <li><input type="radio">Фиксированная</li>
-                <li><input type="radio">Резиновая</li>
-            </ul>
-            <p>Особенности:</p>
-            <ul>
-                <li><input type="checkbox">Слайдер</li>
-                <li><input type="checkbox">Блок преимуществ</li>
-                <li><input type="checkbox">Новости</li>
-                <li><input type="checkbox">Галерея</li>
-                <li><input type="checkbox">Корзина</li>
-            </ul>
+            <p>
+              <label for="from">От</label>
+              <input type="number" id="from">
+            </p>
+            <p>
+              <label for="to">До</label>
+              <input type="number" id="to">
+            </p>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                  <li>
+                    <input type="radio" id="adaptive" checked>
+                    <label for="adaptive">Адаптивная</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="fixed">
+                    <label for="fixed">Фиксированная</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="responsive">
+                    <label for="responsive">Резиновая</label>
+                  </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                  <li>
+                    <input type="checkbox" id="slider" checked>
+                    <label for="slider">Слайдер</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="advantages">
+                    <label for="advantages">Блок преимуществ</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="news" checked>
+                    <label for="news">Новости</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="gallery">
+                    <label for="gallery">Галерея</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cart">
+                    <label for="cart">Корзина</label>
+                  </li>
+              </ul>
+            </fieldset>
             <button type="submit">Показать</button>
           </section>
           <section>
@@ -124,12 +158,21 @@
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
             <button type="button">Напишите нам</button>
           </div>
-          <form>
-            <p>Напишите нам</p>
+          <form method="post">
+            <h2>Напишите нам</h2>
             <button type="button"><!-- Крестик "закрыть" --></button>
-            <p>Ваше имя:<textarea placeholder="Имя Фамилия"></textarea></p>
-            <p>Ваш e-mail:<textarea placeholder="email@example.com"></textarea></p>
-            <p>Текст письма:<textarea placeholder="В свободной форме"></textarea></p>
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" name="Имя и фамилия" placeholder="Имя Фамилия"></input>
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input id="email" type="email" placeholder="email@example.com"></input>
+            </p>
+            <p>
+              <label for="message">Текст письма:</label>
+              <input id="message" type="text" placeholder="В свободной форме"></input>
+            </p>
             <button type="submit">Отправить</button>
           </form>
         </section>

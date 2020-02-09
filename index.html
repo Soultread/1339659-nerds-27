@@ -117,12 +117,21 @@
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
             <button type="button">Напишите нам</button>
           </div>
-          <form>
-            <p>Напишите нам</p>
+          <form method="post">
+            <h2>Напишите нам</h2>
             <button type="button"><!-- Крестик "закрыть" --></button>
-            <p>Ваше имя:<textarea placeholder="Имя Фамилия"></textarea></p>
-            <p>Ваш e-mail:<textarea placeholder="email@example.com"></textarea></p>
-            <p>Текст письма:<textarea placeholder="В свободной форме"></textarea></p>
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" name="Имя и фамилия" placeholder="Имя Фамилия"></input>
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input id="email" type="email" placeholder="email@example.com"></input>
+            </p>
+            <p>
+              <label for="message">Текст письма:</label>
+              <input id="message" type="text" placeholder="В свободной форме"></input>
+            </p>
             <button type="submit">Отправить</button>
           </form>
         </section>
