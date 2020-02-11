@@ -22,63 +22,67 @@
         <div><!-- Это контейнер для тела страницы -->
           <section>
             <h2>Фильтрация результатов</h2>
-            <h3>Стоимость:</h3>
-            <p><input type="range" min="0" max="15000"></p>
-            <p>
-              <label for="from">От</label>
-              <input type="number" id="from">
-            </p>
-            <p>
-              <label for="to">До</label>
-              <input type="number" id="to">
-            </p>
-            <fieldset>
-              <legend>Сетка:</legend>
-              <ul>
-                  <li>
-                    <input type="radio" id="adaptive" checked>
-                    <label for="adaptive">Адаптивная</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="fixed">
-                    <label for="fixed">Фиксированная</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="responsive">
-                    <label for="responsive">Резиновая</label>
-                  </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Особенности:</legend>
-              <ul>
-                  <li>
-                    <input type="checkbox" id="slider" checked>
-                    <label for="slider">Слайдер</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="advantages">
-                    <label for="advantages">Блок преимуществ</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="news" checked>
-                    <label for="news">Новости</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="gallery">
-                    <label for="gallery">Галерея</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="cart">
-                    <label for="cart">Корзина</label>
-                  </li>
-              </ul>
-            </fieldset>
-            <button type="submit">Показать</button>
+            <form>
+              <fieldset>
+                <legend>Стоимость:</legend>
+                <p><input type="range" min="0" max="15000"></p>
+                <p>
+                  <label for="from">От</label>
+                  <input type="number" id="from">
+                </p>
+                <p>
+                  <label for="to">До</label>
+                  <input type="number" id="to">
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Сетка:</legend>
+                <ul>
+                    <li>
+                      <input type="radio" id="adaptive" checked>
+                      <label for="adaptive">Адаптивная</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="fixed">
+                      <label for="fixed">Фиксированная</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="responsive">
+                      <label for="responsive">Резиновая</label>
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Особенности:</legend>
+                <ul>
+                    <li>
+                      <input type="checkbox" id="slider" checked>
+                      <label for="slider">Слайдер</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="advantages">
+                      <label for="advantages">Блок преимуществ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="news" checked>
+                      <label for="news">Новости</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="gallery">
+                      <label for="gallery">Галерея</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="cart">
+                      <label for="cart">Корзина</label>
+                    </li>
+                </ul>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
           </section>
           <section>
             <h2>Подобранные готовые решения</h2>
-            <div>
+            <form>
               <p>Сортировать:</p>
               <ul>
                 <li><button type="button">По цене</button></li>
@@ -87,7 +91,7 @@
                 <li><button type="button"><!-- От большего к меньшему/от А до Я... --></button></li>
                 <li><button type="button"><!-- От меньшего к большему/от Я до А... --></button></li>
               </ul>
-            </div>
+            </form>
             <ul>
                 <li>
                     <img src="./img/img-sedona-jpg.png" width="360" height="576" alt="Превью макета главной сайта Sedona">
