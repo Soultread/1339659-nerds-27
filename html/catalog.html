@@ -26,32 +26,32 @@
         <div><!-- Это контейнер для тела страницы -->
           <section>
             <h2 class="visually-hidden">Фильтрация результатов</h2>
-            <form>
+            <form method="get" action="">
               <fieldset>
                 <legend>Стоимость:</legend>
-                <p><input type="range" min="0" max="15000"></p>
+                <p><input name="price-range" type="range" min="0" max="15000"></p>
                 <p>
                   <label for="from">От</label>
-                  <input type="number" id="from">
+                  <input name="min-price" type="number" id="from">
                 </p>
                 <p>
                   <label for="to">До</label>
-                  <input type="number" id="to">
+                  <input name="max-price" type="number" id="to">
                 </p>
               </fieldset>
               <fieldset>
                 <legend>Сетка:</legend>
                 <ul>
                     <li>
-                      <input type="radio" id="adaptive" checked>
+                      <input name="adaptive" type="radio" id="adaptive" checked>
                       <label for="adaptive">Адаптивная</label>
                     </li>
                     <li>
-                      <input type="radio" id="fixed">
+                      <input name="fixed" type="radio" id="fixed">
                       <label for="fixed">Фиксированная</label>
                     </li>
                     <li>
-                      <input type="radio" id="responsive">
+                      <input name="responsive" type="radio" id="responsive">
                       <label for="responsive">Резиновая</label>
                     </li>
                 </ul>
@@ -60,23 +60,23 @@
                 <legend>Особенности:</legend>
                 <ul>
                     <li>
-                      <input type="checkbox" id="slider" checked>
+                      <input name="slider" type="checkbox" id="slider" checked>
                       <label for="slider">Слайдер</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="advantages">
+                      <input name="advantages" type="checkbox" id="advantages">
                       <label for="advantages">Блок преимуществ</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="news" checked>
+                      <input name="news" type="checkbox" id="news" checked>
                       <label for="news">Новости</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="gallery">
+                      <input name="gallery" type="checkbox" id="gallery">
                       <label for="gallery">Галерея</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="cart">
+                      <input name="cart" type="checkbox" id="cart">
                       <label for="cart">Корзина</label>
                     </li>
                 </ul>
@@ -86,7 +86,7 @@
           </section>
           <section>
             <h2 class="visually-hidden">Подобранные готовые решения</h2>
-            <form>
+            <div>
               <p>Сортировать:</p>
               <ul>
                 <li><button type="button">По цене</button></li>
@@ -95,7 +95,7 @@
                 <li><button type="button" aria-label="Сортировать от большего к меньшему/от А до Я"><!-- От большего к меньшему/от А до Я... --></button></li>
                 <li><button type="button" aria-label="Сортировать от меньшего к большему/от Я до А"><!-- От меньшего к большему/от Я до А... --></button></li>
               </ul>
-            </form>
+            </div>
             <ul>
                 <li>
                     <img src="../img/img-sedona-jpg.jpg" width="360" height="576" alt="Превью макета главной сайта Sedona">
@@ -168,20 +168,24 @@
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
             <button type="button">Напишите нам</button>
           </div>
-          <form method="post">
+          <form method="post" action="">
             <h2>Напишите нам</h2>
-            <button type="button" aria-label="Закрыть"><!-- Крестик "закрыть" --></button>
+            <button type="button" aria-label="Закрыть"><!-- Крестик "закрыть" -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+              </svg>
+            </button>
             <p>
               <label for="name">Ваше имя:</label>
-              <input id="name" type="text" name="Имя и фамилия" placeholder="Имя Фамилия">
+              <input id="name" type="text" name="full-name" placeholder="Имя Фамилия" required>
             </p>
             <p>
               <label for="email">Ваш e-mail:</label>
-              <input id="email" type="email" placeholder="email@example.com">
+              <input id="email" type="email" name="email" placeholder="email@example.com" required>
             </p>
             <p>
               <label for="message">Текст письма:</label>
-              <input id="message" type="text" placeholder="В свободной форме">
+              <textarea id="message" name="message" type="text" placeholder="В свободной форме" required></textarea>
             </p>
             <button type="submit">Отправить</button>
           </form>
