@@ -20,16 +20,58 @@ a {
 .nav .logo:focus {
     opacity: 0.8;
 }
-.nav .logo:action {
+.nav .logo:active {
     opacity: 0.3;
 }
 .nav ul {
     list-style: none;
 }
-.nav li {
+.nav-item {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     color: #000000;
+}
+.nav-item:hover,
+.nav-item:focus {
+    color: #fb565a;
+}
+.nav-item:active {
+    opacity: 0.3;
+    color: #000000;
+}
+.agenda-heading {
+    font-family: 'Roboto';
+    font-size: 55px;
+    font-weight: 500;
+    color: #000000;
+}
+.agenda-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    color: #283136;
+}
+.agenda a {
+    background-color: #fb565a;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    display: block;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+.agenda a:hover,
+.agenda a:focus {
+    background-color: #e74246;
+}
+.agenda a:active {
+
 }
