@@ -313,6 +313,9 @@ a {
     top: 29px;
     box-sizing: border-box;
 }
+.social-item:active svg {
+    opacity: 0.3;
+}
 .social-item:hover,
 .social-item:focus {
     background-color: #e74246;
