@@ -45,6 +45,13 @@ a {
     opacity: 0.3;
     color: #000000;
 }
+.cart::before {
+    content: '';
+    background-image: url('../img/cart-icon.svg');
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
 .agenda-heading {
     font-family: 'Roboto';
     font-size: 55px;
@@ -335,4 +342,10 @@ a {
     font-family: 'Roboto';
     font-size: 16px;
     color: #444444;
+}
+.main-heading {
+    font-family: 'Roboto';
+    font-size: 55px;
+    font-weight: 500;
+    color: #000000;
 }
