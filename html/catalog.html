@@ -32,29 +32,29 @@
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-param">
                 <legend>Стоимость:</legend>
-                <p><input name="price-range" type="range" min="0" max="15000"></p>
+                <p><input class="range" name="price-range" type="range" min="0" max="15000"></p>
                 <p>
                   <label for="from">От</label>
-                  <input name="min-price" type="number" id="from">
+                  <input name="min-price" type="number" id="from" placeholder="0">
                 </p>
                 <p>
                   <label for="to">До</label>
-                  <input name="max-price" type="number" id="to">
+                  <input name="max-price" type="number" id="to" placeholder="15 000">
                 </p>
               </fieldset>
               <fieldset class="filter-param">
                 <legend>Сетка:</legend>
                 <ul>
                     <li>
-                      <input name="grid" type="radio" id="adaptive" checked>
+                      <input class="radio" name="grid" type="radio" id="adaptive" checked>
                       <label for="adaptive">Адаптивная</label>
                     </li>
                     <li>
-                      <input name="grid" type="radio" id="fixed">
+                      <input class="radio" name="grid" type="radio" id="fixed">
                       <label for="fixed">Фиксированная</label>
                     </li>
                     <li>
-                      <input name="grid" type="radio" id="responsive">
+                      <input class="radio" name="grid" type="radio" id="responsive">
                       <label for="responsive">Резиновая</label>
                     </li>
                 </ul>
@@ -125,7 +125,7 @@
                         <a class="description-heading" href="">Barbershop</a>
                         <p class="description-text">Сайт салона красоты. Для мужчин, да.</p>
                         <button type="button">9 900 руб.</button>
-                    </div class="results-description">                    
+                    </div>                    
                 </li>
                 <li class="results-item">
                     <img src="../img/img-mishka-jpg.jpg" width="360" height="576" alt="Превью макета главной сайта Mishka">
@@ -156,10 +156,10 @@
                 </li>
             </ul>
             <div class="results-pages">
-              <a>1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">Следующая</a>
+              <a class="row">1</a>
+              <a class="row" href="">2</a>
+              <a class="row" href="">3</a>
+              <a class="next" href="">Следующая</a>
             </div>
           </section>
         </div>
